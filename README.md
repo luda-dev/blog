@@ -100,13 +100,17 @@ pnpm new-post my-article-id
 
 #### 方法二：手动创建
 
-只需在 `content/posts/` 目录下创建新的 Markdown 文件即可。详细说明请查看 [content/posts/README.md](content/posts/README.md)。
+只需在 `content/posts/` 目录下创建新的 Markdown 文件即可。
 
 快速步骤：
 1. 在 `content/posts/` 创建 `.md` 文件（例如：`my-article.md`）
 2. 添加 Front Matter 元数据（title, description, date, readTime, category）
 3. 使用 Markdown 语法编写文章内容
 4. 运行 `pnpm build` 或 `pnpm dev` 查看效果
+
+详细说明：
+- [快速指南](content/posts/README.md)
+- [完整文档](docs/article-system.md)
 
 ### 自定义主题颜色
 
