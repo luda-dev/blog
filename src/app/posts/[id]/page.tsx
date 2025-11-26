@@ -3,6 +3,7 @@ import { ArrowLeft, Calendar, Clock, Tag } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { getPostById, getAllPostIds } from "@/lib/posts";
+import { CommentSection } from "@/components/comment-section";
 
 interface PageProps {
   params: Promise<{ id: string }>;
@@ -67,6 +68,8 @@ export default async function PostPage({ params }: PageProps) {
           />
         </div>
       </article>
+
+      <CommentSection postId={id} />
     </div>
   );
 }
